@@ -1,0 +1,502 @@
+/* Apply Inter font globally */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(245, 248, 255); ;
+}
+
+/* Custom background pattern using an image from assets */
+.header-banner{
+    background-image: url('/Assets/Hero-bg.png'); /* REPLACE THIS WITH YOUR IMAGE PATH */
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the background image */
+}
+
+/* Header Section */
+.header {
+    padding-left: 100px; /* p-6 */
+    padding-right: 100px; /* p-6 */
+    padding-top: 50px; /* p-6 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    color: #2563eb; /* text-blue-600 */
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: bold;
+    border: 2px dashed #2563eb; /* border-2 border-dashed border-blue-600 */
+    padding: 0.5rem 1rem; /* px-4 py-2 */
+    border-radius: 0.375rem; /* rounded-md */
+}
+
+/* Sign Up Button */
+.signup-button {
+    background-color: #2563eb; /* bg-blue-600 */
+    color: white;
+    padding: 0.75rem 1.5rem; /* px-6 py-3 */
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* transition duration-300 ease-in-out */
+    border: none;
+    cursor: pointer;
+}
+
+.signup-button:hover {
+    background-color: #1d4ed8; /* hover:bg-blue-700 */
+    transform: scale(1.05); /* hover:scale-105 */
+}
+
+/* Hero Section */
+.hero-section {
+    flex-grow: 1; /* flex-grow */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 1rem; /* px-4 py-16 */
+}
+
+/* Hero Title */
+.hero-title {
+    font-size: 3rem; /* text-5xl */
+    font-weight: 800; /* font-extrabold */
+    color: #1f2937; /* text-gray-800 */
+    line-height: 1.25; /* leading-tight */
+    margin-bottom: 2rem; /* mb-8 */
+    max-width: 64rem; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+.hero-button {
+    background-color: #2563eb;
+    color: white;
+    margin-bottom: 50px;
+    padding: 1rem 2rem; /* px-8 py-4 */
+    border-radius: 9999px; /* rounded-full */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    font-size: 1.125rem; 
+    font-weight: 600; 
+    border: none;
+    cursor: pointer;
+}
+
+.hero-button:hover {
+    background-color: #1d4ed8; 
+    transform: scale(1.05); 
+}
+
+/* action style */
+.container {
+    display: flex;
+    flex-direction: row; /* Default to row for larger screens */
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px; /* Max width for the content */
+    margin: 20px 100px; /* Center the container with some vertical margin */
+    padding: 20px;
+    gap: 10px; /* Space between the left and right sections */
+}
+
+/* Left Section Styles (Text and Button) */
+.content-left {
+    flex: 1; /* Allows it to grow and shrink */
+    max-width: 500px; /* Limit width for better readability */
+    text-align: left;
+    padding-right: 20px; /* Some padding on the right */
+}
+
+.main-heading {
+    font-size: 3rem; /* Large heading size */
+    font-weight: 700; /* Extra bold */
+    color: #333; /* Dark text color */
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.description-text {
+    font-size: 1.2rem;
+    color: #666; /* Slightly lighter text color */
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 450px; /* Limit width for description */
+}
+
+.live-preview-button {
+    background-color: #6a5acd; /* Purple color from the image */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.content-right {
+    flex: 1; /* Allows it to grow and shrink */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px; /* Some padding on the left */
+}
+
+.image-mockup {
+    width: 90%;
+    max-width: 490px; /* Max width for the mockup */
+    border-radius: 25px; /* More rounded corners for the mockup container */
+    overflow: hidden; /* Ensures the image inside respects the border-radius */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    border: 1px solid rgba(0, 0, 0, 0.05); /* Very subtle border */
+    background-color: #000; /* Background for the mockup itself, if image doesn't fill */
+}
+
+.mockup-image {
+    width: 100%; /* Make the image fill its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below image */
+}
+
+.stats-section {
+    background-color: #e6e8ff; /* Light purple background from the image */
+    padding: 40px 40px;
+    border-radius: 15px; /* Rounded corners for the entire section */
+    text-align: center;
+    width: 900px; /* Max width of the section */
+    margin: 20px auto; /* Margin around the section */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.stats-container {
+    width: 100%;
+
+}
+
+.stats-heading {
+    font-size: 2.2rem;
+    font-weight: 700; /* Bold */
+    color: #333;
+    margin-bottom: 40px; /* Space below the main heading */
+}
+
+.stats-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: space-around; /* Distribute items evenly */
+    gap: 30px; /* Space between grid items */
+}
+
+.stat-item {
+    flex: 1; /* Allows items to grow and shrink */
+    min-width: 200px; /* Minimum width for each item before wrapping */
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 3.5rem; /* Large number size */
+    font-weight: 800; /* Extra bold */
+    color: #4a4aff; /* Blue color for numbers from the image */
+    margin-bottom: 10px;
+    line-height: 1; /* Ensure numbers are close to description */
+}
+
+.stat-description {
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: 500; /* Medium weight */
+}
+
+.testimonials-section {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonials-heading {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.testimonials-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.testimonial-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    flex: 1;
+    min-width: 280px;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.star-rating {
+    width: 30px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.reviewer-info {
+    margin-top: auto;
+}
+
+.reviewer-name {
+    font-size: 0.9rem;
+    color: #999;
+    line-height: 1.4;
+}
+
+.focus-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    padding: 60px 20px;
+    width: 1000px; 
+    margin: 0 auto;
+    text-align: center;
+}
+
+.focus-content {
+    margin-bottom: 40px;
+}
+
+.focus-heading {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.focus-description {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.get-started-button {
+    background-color: #6a5acd; /* Purple color from the image */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.get-started-button:hover {
+    background-color: #5c4ebc;
+    transform: translateY(-2px);
+}
+
+.focus-image-container {
+    width: 100%;
+    max-width: 800px; 
+    border-radius: 25px; 
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.focus-mockup-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* contact  */
+.contact-section {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 60px; /* Space between left and right sections */
+}
+
+.contact-left {
+    flex: 1;
+    min-width: 300px; /* Ensure it doesn't get too small */
+    text-align: left;
+    padding-right: 20px;
+}
+
+.contact-heading {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.1;
+}
+
+.contact-right {
+    flex: 1;
+    min-width: 300px; /* Ensure it doesn't get too small */
+    max-width: 500px; /* Limit form width */
+    padding-left: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between form groups */
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-input,
+.form-textarea {
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: #bbb;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    border-color: #6a5acd;
+    box-shadow: 0 0 0 3px rgba(106, 90, 205, 0.2);
+}
+
+.form-textarea {
+    min-height: 120px;
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.submit-button {
+    background-color: #6a5acd; /* Purple color from the image */
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-self: flex-start; /* Align button to the start of the form */
+}
+
+.submit-button:hover {
+    background-color: #5c4ebc;
+    transform: translateY(-2px);
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    width: 100% ;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.footer-logo {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #4a4aff; /* Blue color from the image */
+   
+}
+
+.footer-description {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 600px; /* Limit width for readability */
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap; /* Allow links to wrap */
+    justify-content: center;
+    gap: 30px; /* Space between links */
+}
+
+.footer-link {
+    font-size: 1rem;
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #4a4aff; /* Blue on hover */
+}
+
+
