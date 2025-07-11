@@ -10,7 +10,7 @@ body {
 }
 
 .header-banner{
-    background-image: url('/Assets/Hero-bg.png');
+    background-image: url('Assets/Hero-bg.png');
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center; 
