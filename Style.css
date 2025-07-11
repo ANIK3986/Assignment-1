@@ -9,19 +9,18 @@ body {
     background-color:rgb(245, 248, 255); ;
 }
 
-/* Custom background pattern using an image from assets */
 .header-banner{
-    background-image: url('/Assets/Hero-bg.png'); /* REPLACE THIS WITH YOUR IMAGE PATH */
+    background-image: url('/Assets/Hero-bg.png');
     background-repeat: no-repeat;
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-position: center; /* Centers the background image */
+    background-size: cover; 
+    background-position: center; 
 }
 
 /* Header Section */
 .header {
-    padding-left: 100px; /* p-6 */
-    padding-right: 100px; /* p-6 */
-    padding-top: 50px; /* p-6 */
+    padding-left: 100px;
+    padding-right: 100px; 
+    padding-top: 50px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,48 +28,47 @@ body {
 
 /* Logo */
 .logo {
-    color: #2563eb; /* text-blue-600 */
-    font-size: 1.5rem; /* text-2xl */
+    color: #2563eb; 
+    font-size: 1.5rem; 
     font-weight: bold;
-    border: 2px dashed #2563eb; /* border-2 border-dashed border-blue-600 */
-    padding: 0.5rem 1rem; /* px-4 py-2 */
-    border-radius: 0.375rem; /* rounded-md */
-}
+    border: 2px dashed #2563eb; 
+    padding: 0.5rem 1rem; 
+    border-radius: 0.375rem; }
 
 /* Sign Up Button */
 .signup-button {
-    background-color: #2563eb; /* bg-blue-600 */
+    background-color: #2563eb; 
     color: white;
-    padding: 0.75rem 1.5rem; /* px-6 py-3 */
-    border-radius: 0.5rem; /* rounded-lg */
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
-    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* transition duration-300 ease-in-out */
+    padding: 0.75rem 1.5rem; 
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
     border: none;
     cursor: pointer;
 }
 
 .signup-button:hover {
-    background-color: #1d4ed8; /* hover:bg-blue-700 */
-    transform: scale(1.05); /* hover:scale-105 */
+    background-color: #1d4ed8;
+    transform: scale(1.05); 
 }
 
 /* Hero Section */
 .hero-section {
-    flex-grow: 1; /* flex-grow */
+    flex-grow: 1; 
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 4rem 1rem; /* px-4 py-16 */
+    padding: 4rem 1rem; 
 }
 
 /* Hero Title */
 .hero-title {
-    font-size: 3rem; /* text-5xl */
-    font-weight: 800; /* font-extrabold */
-    color: #1f2937; /* text-gray-800 */
-    line-height: 1.25; /* leading-tight */
-    margin-bottom: 2rem; /* mb-8 */
+    font-size: 3rem; 
+    font-weight: 800;
+    color: #1f2937; 
+    line-height: 1.25; 
+    margin-bottom: 2rem; 
     max-width: 64rem; 
     margin-left: auto;
     margin-right: auto;
@@ -83,9 +81,9 @@ body {
     background-color: #2563eb;
     color: white;
     margin-bottom: 50px;
-    padding: 1rem 2rem; /* px-8 py-4 */
-    border-radius: 9999px; /* rounded-full */
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+    padding: 1rem 2rem; 
+    border-radius: 9999px; 
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
     font-size: 1.125rem; 
     font-weight: 600; 
@@ -101,45 +99,45 @@ body {
 /* action style */
 .container {
     display: flex;
-    flex-direction: row; /* Default to row for larger screens */
+    flex-direction: row; 
     align-items: center;
     justify-content: center;
-    max-width: 1200px; /* Max width for the content */
-    margin: 20px 100px; /* Center the container with some vertical margin */
+    max-width: 1200px; 
+    margin: 20px auto; 
     padding: 20px;
-    gap: 10px; /* Space between the left and right sections */
+    gap: 10px; 
 }
 
 /* Left Section Styles (Text and Button) */
 .content-left {
-    flex: 1; /* Allows it to grow and shrink */
-    max-width: 500px; /* Limit width for better readability */
+    flex: 1; 
+    max-width: 500px; 
     text-align: left;
-    padding-right: 20px; /* Some padding on the right */
+    padding-right: 20px; 
 }
 
 .main-heading {
-    font-size: 3rem; /* Large heading size */
-    font-weight: 700; /* Extra bold */
-    color: #333; /* Dark text color */
+    font-size: 3rem; 
+    font-weight: 700; 
+    color: #333; 
     margin-bottom: 20px;
     line-height: 1.1;
 }
 
 .description-text {
     font-size: 1.2rem;
-    color: #666; /* Slightly lighter text color */
+    color: #666; 
     line-height: 1.6;
     margin-bottom: 30px;
-    max-width: 450px; /* Limit width for description */
+    max-width: 450px; 
 }
 
 .live-preview-button {
-    background-color: #6a5acd; /* Purple color from the image */
+    background-color: #6a5acd; 
     color: white;
     padding: 15px 30px;
     border: none;
-    border-radius: 8px; /* Rounded corners */
+    border-radius: 8px; 
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
@@ -150,37 +148,36 @@ body {
 
 
 .content-right {
-    flex: 1; /* Allows it to grow and shrink */
+    flex: 1; 
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 20px; /* Some padding on the left */
+    padding-left: 20px; 
 }
 
 .image-mockup {
     width: 90%;
-    max-width: 490px; /* Max width for the mockup */
-    border-radius: 25px; /* More rounded corners for the mockup container */
-    overflow: hidden; /* Ensures the image inside respects the border-radius */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Soft shadow */
-    border: 1px solid rgba(0, 0, 0, 0.05); /* Very subtle border */
-    background-color: #000; /* Background for the mockup itself, if image doesn't fill */
-}
+    max-width: 490px; 
+    border-radius: 25px; 
+    overflow: hidden; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); 
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background-color: #000;} 
 
 .mockup-image {
-    width: 100%; /* Make the image fill its container */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove extra space below image */
+    width: 100%; 
+    height: auto; 
+    display: block; 
 }
 
 .stats-section {
-    background-color: #e6e8ff; /* Light purple background from the image */
+    background-color: #e6e8ff; 
     padding: 40px 40px;
-    border-radius: 15px; /* Rounded corners for the entire section */
+    border-radius: 15px; 
     text-align: center;
-    width: 900px; /* Max width of the section */
-    margin: 20px auto; /* Margin around the section */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 900px; 
+    margin: 20px auto; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .stats-container {
@@ -190,36 +187,36 @@ body {
 
 .stats-heading {
     font-size: 2.2rem;
-    font-weight: 700; /* Bold */
+    font-weight: 700; 
     color: #333;
-    margin-bottom: 40px; /* Space below the main heading */
+    margin-bottom: 40px; 
 }
 
 .stats-grid {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-    justify-content: space-around; /* Distribute items evenly */
-    gap: 30px; /* Space between grid items */
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    gap: 30px; 
 }
 
 .stat-item {
-    flex: 1; /* Allows items to grow and shrink */
-    min-width: 200px; /* Minimum width for each item before wrapping */
+    flex: 1; 
+    min-width: 200px; 
     text-align: center;
 }
 
 .stat-number {
-    font-size: 3.5rem; /* Large number size */
-    font-weight: 800; /* Extra bold */
-    color: #4a4aff; /* Blue color for numbers from the image */
+    font-size: 3.5rem; 
+    font-weight: 800; 
+    color: #4a4aff; 
     margin-bottom: 10px;
-    line-height: 1; /* Ensure numbers are close to description */
+    line-height: 1;
 }
 
 .stat-description {
     font-size: 1.1rem;
     color: #555;
-    font-weight: 500; /* Medium weight */
+    font-weight: 500; 
 }
 
 .testimonials-section {
@@ -357,18 +354,18 @@ body {
 /* contact  */
 .contact-section {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    flex-wrap: wrap; 
     justify-content: center;
     align-items: center;
     padding: 60px 20px;
     max-width: 1200px;
     margin: 0 auto;
-    gap: 60px; /* Space between left and right sections */
+    gap: 60px;
 }
 
 .contact-left {
     flex: 1;
-    min-width: 300px; /* Ensure it doesn't get too small */
+    min-width: 300px; 
     text-align: left;
     padding-right: 20px;
 }
@@ -382,15 +379,15 @@ body {
 
 .contact-right {
     flex: 1;
-    min-width: 300px; /* Ensure it doesn't get too small */
-    max-width: 500px; /* Limit form width */
+    min-width: 300px; 
+    max-width: 500px; 
     padding-left: 20px;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Space between form groups */
+    gap: 20px; 
     background-color: #ffffff;
     padding: 30px;
     border-radius: 15px;
@@ -433,11 +430,11 @@ body {
 
 .form-textarea {
     min-height: 120px;
-    resize: vertical; /* Allow vertical resizing */
+    resize: vertical;
 }
 
 .submit-button {
-    background-color: #6a5acd; /* Purple color from the image */
+    background-color: #6a5acd; 
     color: white;
     padding: 15px 25px;
     border: none;
@@ -447,7 +444,7 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    align-self: flex-start; /* Align button to the start of the form */
+    align-self: flex-start; 
 }
 
 .submit-button:hover {
@@ -469,7 +466,7 @@ body {
 .footer-logo {
     font-size: 4rem;
     font-weight: 800;
-    color: #4a4aff; /* Blue color from the image */
+    color: #4a4aff; 
    
 }
 
@@ -478,14 +475,14 @@ body {
     color: #666;
     line-height: 1.6;
     margin-bottom: 40px;
-    max-width: 600px; /* Limit width for readability */
+    max-width: 600px; 
 }
 
 .footer-nav {
     display: flex;
-    flex-wrap: wrap; /* Allow links to wrap */
+    flex-wrap: wrap; 
     justify-content: center;
-    gap: 30px; /* Space between links */
+    gap: 30px; 
 }
 
 .footer-link {
@@ -496,7 +493,7 @@ body {
 }
 
 .footer-link:hover {
-    color: #4a4aff; /* Blue on hover */
+    color: #4a4aff; 
 }
 
 
